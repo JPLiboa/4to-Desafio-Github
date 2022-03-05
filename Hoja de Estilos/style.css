@@ -6,20 +6,24 @@
 }
 h1 {
     color: white;
-    
+    margin-left: 0px;
     height:min-content;
     font-size:xx-large;
     text-align: center;
     text-transform: uppercase;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image: linear-gradient(blue, cyan);
+    background-image: linear-gradient(brown, rgb(224, 92, 92));
 }
 
 
 .foto {
     width: 1366px;
-    height: 400px;      
+    height: 400px;  
+     
 }
+
+
+
 section {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -80,7 +84,7 @@ button[type="submit"]{
 }
 .servicios{
     display: flex;
-    background-image: linear-gradient(white,cyan);
+    background-image: linear-gradient(white,rgb(224, 92, 92));
     list-style-type:square;
     margin: 50px;
     font-size: 18px;
@@ -135,9 +139,12 @@ button[type="submit"]{
 footer {
     padding: 10px;
     text-align: center;
-    background-image: url(../Img/sierras.jfif);
+    background-image: url(../img/footer\ montanas\ 3.jpg);
     text-align-last: center;
+    
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(102, 11, 187);
+    border-color: white;
     
 }
 
@@ -151,6 +158,8 @@ footer {
 
 }
 .nuevalista{
+    animation-name: aparecer;  
+    animation-duration: 5s;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -250,14 +259,27 @@ footer {
 .logofbook{
     width: 20px;
     border-radius: 10px;
+    cursor: pointer;
 }
+
 .logoWhasap{
     width: 22px;
     border-radius: 10px;
+    cursor: pointer;
 }
+
 .logoIG{
     width: 20px;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.efecto{
+    transition: transform 0.5s;
+}
+
+.efecto:hover{
+    transform: scale(1.3);
 }
 
 .imgdesayuno{
