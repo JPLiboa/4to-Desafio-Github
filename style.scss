@@ -9,6 +9,23 @@ $color-h1: white;
 $tipografia-titulo-home: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 $fondo-titulo-home: linear-gradient(brown, rgb(224, 92, 92));
 
+/*Maps*/
+$primaryColors:(
+    primary: white,
+    secondary: grey,
+    terciary: black
+);
+
+
+
+
+/*Mixin*/
+
+@mixin generic-text {
+    font-size: 15px;
+    text-align: center;
+}
+
 header{
     h1 {
         color: $color-h1;
@@ -19,22 +36,21 @@ header{
         text-transform: uppercase;
         font-family: $tipografia-titulo-home;
         background-image: $fondo-titulo-home;
-        }
+    }
     .foto {
         width: 1366px;
         height: 400px;  
          
-        }   
+    }   
 
 }
 
-.nuevalista{
+body{
+    font-family: $tipografia-titulo-home;
+}
 
-    .a{
-        border-bottom: 10px;
-        background-color: grey;
-    }
-    
+
+.nuevalista{
     animation-name: aparecer;  
     animation-duration: 5s;
     display: flex;
@@ -45,11 +61,15 @@ header{
     text-decoration: none;
     font-size: 25px;
     color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 
     .padre-flex{
         display: flex;
-        
+        a{
+            border-bottom: 10px;
+            /*map-get*/
+            background-color: map-get($primaryColors, $terceary);
+        }
     }
         
 }
@@ -57,19 +77,14 @@ header{
 section {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-
 .cabanas {
     padding-top: 30px;
     text-align: left;
     font-size: 35px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: chocolate;
     
 }
 .pieCabanas{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 15px;
     color: chocolate;
     background-color: antiquewhite;
     margin-top: 0px;
@@ -77,9 +92,9 @@ section {
 
 
     
-.links{ text-decoration: none;
-    text-align: center;
-    font-size: 15px;
+.links{ 
+    @include generic-text;
+    text-decoration: none;
     margin-right: 25px;
     cursor: pointer;
     padding: 10px;
@@ -87,8 +102,6 @@ section {
 p {
     line-height: 1.6;                                                                                            
     padding: 10px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 .contacto {
     display: flex;
@@ -105,10 +118,9 @@ p {
   
 }
 button[type="submit"]{
+    @include generic-text;
     width: 100px;
     height: 30px;
-    font-size: 15px;
-    text-align: center;
     font-weight: bold;
     cursor: pointer;
 }
@@ -119,7 +131,6 @@ button[type="submit"]{
     margin: 50px;
     font-size: 18px;
     text-align:left;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 30px;
     border-radius: 15px;
     display: block;
@@ -128,37 +139,37 @@ button[type="submit"]{
 }
 
 .imageService{
-        display: grid;
-        padding: 20px;
-        gap: 15px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        align-items: center ;
-        transition: 1.5;
-        }   
+    display: grid;
+    padding: 20px;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center ;
+    transition: 1.5;
+}   
 
-        .imageService__item{
-                display: grid;
+.imageService__item{
+    display: grid;
+    
+    width: 300px;
+    height: 120px;
+    cursor: pointer; 
+    transition: transform 0.5s;
+            
+}
+.imageService__item img{
+    width: 100%;
+    height:100%;
+}
+.imageService__item:hover{
+    transform: scale(1.5);
+    }
                 
-                width: 300px;
-                height: 120px;
-                cursor: pointer; 
-                transition: transform 0.5s;
-                    
-                }
-                        .imageService__item img{
-                            width: 100%;
-                            height:100%;
-                        }
-                        .imageService__item:hover{
-                            transform: scale(1.5);
-                            }
-                        
 
-                        .imgdesay {
-                            
-                            justify-items: center;
-                        
+.imgdesay {
+    
+    justify-items: center;
+                
 }
 
 
@@ -180,35 +191,33 @@ footer {
     text-align: center;
     background-image: url(../Img/footermontanas3.jpg);
     text-align-last: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:rgb(102, 11, 187);
     border-color: white;
 
-        .efecto{
-             transition: transform 0.5s;
-                }
+    .efecto{
+        transition: transform 0.5s;
+    }
     
-            .efecto:hover{
-            transform: scale(1.3);
-                }
+    .efecto:hover{
+        transform: scale(1.3);
+    }
 
-                .logofbook{
-                width: 20px;
-                border-radius: 10px;
-                cursor: pointer;
-                }
+    .logofbook{
+        width: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
         
-                .logoWhasap{
-                width: 22px;
-                border-radius: 10px;
-                cursor: pointer;
-                }
+    .logoWhasap{
+        width: 22px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
         
-                .logoIG{
-                width: 20px;
-                border-radius: 10px;
-                cursor: pointer;
-                }
+    .logoIG{
+        width: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
     
     
     
@@ -223,32 +232,18 @@ footer {
 
 
 
-.imgCabSimple{
-    width: 1350px;
-    height: 500px;
-    cursor: pointer;
-}
-.imgCabMedia{
-    width: 1350px;
-    height: 500px;
-    cursor: pointer;
-}
-.imgCabFull{
-    width: 1350px;
-    height: 500px;
-    cursor: pointer;
-}
-.imgCabKing{
+.imgCab{
     width: 1350px;
     height: 500px;
     cursor: pointer;
 }
 
+
+
     
 .card{
    
     background-color: antiquewhite;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-radius: 15px;
     padding: 20px;
     margin: 20px;
@@ -276,17 +271,28 @@ footer {
     
     
 }
-.card__link--twitter{
-    background-color: #1c96c8;
-    border-radius: 15px;
-    cursor: pointer;
-    text-align: center;
-}
-.card__link--instagram{
-    background-color: #f28705 ;
-    border-radius: 15px;
-    cursor: pointer;
-}
+
+$botonesRedes:(
+    twitter:#1c96c8,
+    instagram:#f28705
+);
+
+@each $red, $color in $botonesRedes {
+    .card__link--#{$red} {
+        background-color: $color;
+        border-radius: 15px;
+        cursor: pointer;
+        text-align: center;
+        border: none;
+    }    
+}   
+
+
+
+
+
+
+
 .seguinos{
     margin: 20px;
     text-align: left;
@@ -346,6 +352,7 @@ footer {
         height: 200px;
     }
     .nuevalista{
+        
        align-items: center;
        justify-content: center;
        font-size:27px;
@@ -365,6 +372,7 @@ footer {
 
     }
     .servicios-flex{
+        @extend .servicios;
         justify-content: center;
     }
     .imageService{
@@ -413,21 +421,10 @@ footer {
         color: #1c96c8;
         text-align: center;
     }
-    .imgCabSimple{
+    .imgCab{
         width: 360px;
         height: 200px;
-    }
-    .imgCabMedia{
-        width: 360px;
-        height: 200px;
-    }
-    .imgCabFull{
-        width: 360px;
-        height: 200px;
-    }
-    .imgCabKing{
-        width: 360px;
-        height: 200px;
+    
     }
     .pieCabanas{
         font-size: 12px;

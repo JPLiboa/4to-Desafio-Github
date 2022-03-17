@@ -4,6 +4,7 @@
 }
 
 /*uso de variables*/
+/*Mixin*/
 header h1 {
   color: white;
   margin-left: 0px;
@@ -77,9 +78,10 @@ section {
 }
 
 .links {
-  text-decoration: none;
-  text-align: center;
   font-size: 15px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: none;
   margin-right: 25px;
   cursor: pointer;
   padding: 10px;
@@ -107,10 +109,11 @@ p {
 }
 
 button[type="submit"] {
-  width: 100px;
-  height: 30px;
   font-size: 15px;
   text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 100px;
+  height: 30px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -139,9 +142,9 @@ button[type="submit"] {
   display: grid;
   padding: 20px;
   gap: 15px;
-  -ms-grid-columns: (1fr);
+  -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr);
+  -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -235,25 +238,7 @@ footer .logoIG {
   height: 30px;
 }
 
-.imgCabSimple {
-  width: 1350px;
-  height: 500px;
-  cursor: pointer;
-}
-
-.imgCabMedia {
-  width: 1350px;
-  height: 500px;
-  cursor: pointer;
-}
-
-.imgCabFull {
-  width: 1350px;
-  height: 500px;
-  cursor: pointer;
-}
-
-.imgCabKing {
+.imgCab {
   width: 1350px;
   height: 500px;
   cursor: pointer;
@@ -313,7 +298,7 @@ footer .logoIG {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr);
+  -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
@@ -410,7 +395,7 @@ footer .logoIG {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-grid-columns: (1fr);
+    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     padding-left: 45px;
   }
