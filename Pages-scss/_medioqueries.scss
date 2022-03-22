@@ -1,3 +1,5 @@
+
+
 @media (max-width: 480px){
     
     .grid{
@@ -46,6 +48,7 @@
         @extend .servicios;
         justify-content: center;
     }
+    
     .imageService{
         display: none;
 
@@ -99,5 +102,6 @@
     }
     .pieCabanas{
         font-size: 12px;
+
     }
-   }
+}

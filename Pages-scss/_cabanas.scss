@@ -20,6 +20,11 @@ section {
     cursor: pointer;
 }
 
+@mixin generic-text {
+    font-size: 15px;
+    text-align: center;
+}
+
 .links{ 
     @include generic-text;
     text-decoration: none;

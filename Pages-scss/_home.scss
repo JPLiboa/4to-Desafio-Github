@@ -9,7 +9,7 @@ $fondo-titulo-home: linear-gradient(brown, rgb(224, 92, 92));
 
 
 $primaryColors:(
-    primary: black,
+    primary: white,
     secondary: grey,
     terciary: black
 );
@@ -55,8 +55,7 @@ body{
         display: flex;
         a{
             border-bottom: 10px;
-            
-            background-color: map-get($primaryColors, $terceary);
+            background-color:map-get($primaryColors, terciary);
         }
     }
         
