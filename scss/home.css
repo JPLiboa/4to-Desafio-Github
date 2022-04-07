@@ -10,7 +10,7 @@ header h1 {
   height: -moz-min-content;
   height: min-content;
   font-size: xx-large;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-image: -webkit-gradient(linear, left top, left bottom, from(brown), to(#e05c5c));
@@ -18,7 +18,7 @@ header h1 {
 }
 
 header .foto {
-  width: 1366px;
+  width: 120px;
   height: 400px;
 }
 
