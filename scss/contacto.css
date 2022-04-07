@@ -15,7 +15,7 @@ p {
   list-style: disc;
   margin: 5px;
   padding: 5px;
-  background-color: whitesmoke;
+  width: 600px;
 }
 
 button[type="submit"] {
@@ -38,5 +38,18 @@ button[type="submit"] {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 100%;
+}
+
+.map {
+  float: right;
+}
+
+.mapaDesitio {
+  display: -ms-grid;
+  display: grid;
+  padding: 70px;
+  height: 400px;
+  width: 500px;
+  margin-right: 45px;
 }
 /*# sourceMappingURL=contacto.css.map */

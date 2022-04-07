@@ -1,0 +1,135 @@
+@media (max-width: 699px) {
+    .grid{
+      justify-content: center;
+      text-align: center;
+      font-size: samll;
+  }
+  body{
+      margin: 0px;
+      padding: 0px;
+  }
+  
+  h1 {
+      text-align: center;
+      font-size: 5px;
+     padding: 20px;
+     background-color: #1c96c8;
+     
+  
+  }
+  header .picture{
+    width: 450px;
+    height: 200px;
+  }
+  .newlist{
+    display: grid;
+    align-items: center;  
+    padding-left: 20px;
+    color: black;
+    font-size: 25px;
+     
+  }
+  
+  .newlist .a {
+    border-bottom: 10px;
+    background-color: grey;
+    
+  }
+  
+  .newlist .padre-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  
+  .padre-flex{
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+  }
+  .servicios{
+      font-size: 15px;
+      justify-content: space-between;
+  
+  }
+  .servicios-flex{
+      
+      justify-content: center;
+  }
+  
+  .imageService{
+      display: none;
+  
+  }
+  .imageService__item{
+      display: none;
+  }
+  .imgdesayuno{
+      display: inline;
+      width: 360px;
+  }
+  
+  .links{
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 45px;
+      color: black;
+      font-size: 25px;
+      
+  }
+  .contacto{
+      display: grid;
+      width: 320px;
+      font-size: 15px;
+      background-color: none   
+  }
+  
+  .map{
+    float:none;
+    
+    
+    
+  }
+  .mapaDesitio{
+    display: grid;
+    padding: 10px;
+    align-items: baseline;
+    height: 250px;
+    width: 300px;
+    margin-left: 25px;
+    
+    
+  }
+  
+  
+  .nosotros{
+      display: none;
+  }
+  .nosotrosMobile{
+      display: inline-flex;
+      width: 360px;
+      height: 220px;
+      justify-content: center;
+      
+      
+  }
+  .botonEnviar{
+      align-items: center;
+      margin-left: 115px;
+  }
+  .cabanas{
+      font-size: 15px;
+      color: #1c96c8;
+      text-align: center;
+  }
+  .imgCab{
+      width: 450px;
+      height: 200px;
+  
+  }
+  .pieCabanas{
+      font-size: 12px;
+  
+  }
+  }

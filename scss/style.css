@@ -47,7 +47,7 @@ p {
   list-style: disc;
   margin: 5px;
   padding: 5px;
-  width: 600px;
+  background-color: whitesmoke;
 }
 
 button[type="submit"] {
@@ -72,26 +72,13 @@ button[type="submit"] {
   border-radius: 100%;
 }
 
-.map {
-  float: right;
-}
-
-.mapaDesitio {
-  display: -ms-grid;
-  display: grid;
-  padding: 70px;
-  height: 400px;
-  width: 500px;
-  margin-right: 45px;
-}
-
 * {
   margin: 0;
   padding: 0;
 }
 
 header h1 {
-  color: white;
+  color: #0c0b0b;
   margin-left: 0px;
   height: -webkit-min-content;
   height: -moz-min-content;
@@ -183,7 +170,7 @@ footer .logoIG {
   cursor: pointer;
 }
 
-@media (max-width: 699px) {
+@media (max-width: 480px) {
   .grid {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -197,35 +184,25 @@ footer .logoIG {
   }
   h1 {
     text-align: center;
-    font-size: 5px;
+    font-size: 20px;
     padding: 20px;
     background-color: #1c96c8;
   }
-  header .picture {
-    width: 450px;
+  .foto {
+    width: 380px;
     height: 200px;
   }
-  .newlist {
-    display: -ms-grid;
-    display: grid;
+  .nuevalista {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-left: 20px;
-    color: black;
-    font-size: 25px;
-  }
-  .newlist .a {
-    border-bottom: 10px;
-    background-color: grey;
-  }
-  .newlist .padre-menu {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 27px;
+    padding: 5px;
+    margin-bottom: 35px;
+    margin-top: 15px;
   }
   .padre-flex {
     -webkit-box-align: center;
@@ -237,7 +214,7 @@ footer .logoIG {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .servicios {
+  .servicios, .servicios-flex {
     font-size: 15px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -267,8 +244,6 @@ footer .logoIG {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     padding-left: 45px;
-    color: black;
-    font-size: 25px;
   }
   .contacto {
     display: -ms-grid;
@@ -276,20 +251,6 @@ footer .logoIG {
     width: 320px;
     font-size: 15px;
     background-color: none;
-  }
-  .map {
-    float: none;
-  }
-  .mapaDesitio {
-    display: -ms-grid;
-    display: grid;
-    padding: 10px;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-    height: 250px;
-    width: 300px;
-    margin-left: 25px;
   }
   .nosotros {
     display: none;
@@ -308,7 +269,6 @@ footer .logoIG {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 115px;
   }
   .cabanas {
     font-size: 15px;
@@ -316,7 +276,7 @@ footer .logoIG {
     text-align: center;
   }
   .imgCab {
-    width: 450px;
+    width: 360px;
     height: 200px;
   }
   .pieCabanas {
@@ -324,7 +284,7 @@ footer .logoIG {
   }
 }
 
-.servicios {
+.servicios, .servicios-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -404,7 +364,7 @@ footer .logoIG {
 }
 
 .card {
-  background-color: #fae2df;
+  background-color: #1a0a08;
   border-radius: 100%;
   padding: 20px;
   margin: 20px;
@@ -465,8 +425,8 @@ footer .logoIG {
 }
 
 .nosotros__item {
-  width: 280px;
-  height: 200px;
+  width: 300px;
+  height: 120px;
   cursor: pointer;
 }
 

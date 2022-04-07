@@ -1,13 +1,13 @@
 .card {
-  background-color: antiquewhite;
-  border-radius: 15px;
+  background-color: #fae2df;
+  border-radius: 100%;
   padding: 20px;
   margin: 20px;
   border-color: black;
 }
 
 .card__title {
-  text-align: center;
+  text-align: left;
 }
 
 .card__description {
@@ -60,8 +60,8 @@
 }
 
 .nosotros__item {
-  width: 300px;
-  height: 120px;
+  width: 280px;
+  height: 200px;
   cursor: pointer;
 }
 
@@ -79,4 +79,4 @@
 .nosotrosMobile {
   display: none;
 }
-/*# sourceMappingURL=Nosotros.css.map */
+/*# sourceMappingURL=nosotros.css.map */
