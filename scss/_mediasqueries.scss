@@ -13,9 +13,9 @@
         
         
     h1 { 
-      color: red 
-      font-size 200px;
-      text-align center;
+      color: red; 
+      font-size: 200px;
+      text-align:center;
       padding: 20px;
     }
         
@@ -46,29 +46,22 @@
     
     .servicios {
       font-size: 15px;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
+      
       justify-content: space-between;
     
     }
     .servicios-flex {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
+      
       justify-content: center;
     }
-    .imageService {
-      display: none;
-    }
+  
     .imageService__item {
       display: none;
     }
-    .imgdesayuno {
-      display: inline;
-      width: 360px;
-    }
+  
     
     .links {
-      display: -ms-grid;
+      
       display: grid;
       box-pack: center;
       
@@ -80,8 +73,8 @@
       font-size: 25px;
     }
     .contacto {
-      display: -ms-grid;
       display: grid;
+      
       width: 320px;
       font-size: 15px;
       background-color: none;
@@ -299,5 +292,12 @@
       
     .nosotrosMobile {
       display: none;
+    }
+    .imageService {
+      display: none;
+    }
+    .imgdesayuno {
+      display: inline;
+      width: 100%;
     }
     }
